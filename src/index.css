@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design system for "Sous le chêne, la France" - Academic Literary Theme
+   Palette: sépia, beige, noir et blanc (manuscrits anciens)
+   All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Core Literary Theme Colors */
+    --background: 45 29% 97%; /* Beige très clair - parchemin */
+    --foreground: 36 33% 15%; /* Brun foncé - encre ancienne */
+
+    --card: 41 47% 92%; /* Sépia clair */
+    --card-foreground: 36 33% 15%;
+
+    --popover: 45 29% 97%;
+    --popover-foreground: 36 33% 15%;
+
+    /* Primary - Brun académique noble */
+    --primary: 36 33% 15%; /* Brun foncé élégant */
+    --primary-foreground: 45 29% 97%;
+    --primary-hover: 36 33% 25%; /* Plus clair au survol */
+
+    /* Secondary - Sépia doux */
+    --secondary: 41 47% 85%; /* Sépia moyen */
+    --secondary-foreground: 36 33% 15%;
+
+    /* Muted - Tons neutres */
+    --muted: 41 30% 90%; /* Beige sépia très clair */
+    --muted-foreground: 45 4% 40%; /* Gris sépia */
+
+    /* Accent - Or antique subtil */
+    --accent: 41 47% 75%; /* Sépia plus prononcé */
+    --accent-foreground: 36 33% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 41 30% 85%; /* Bordures sépia délicates */
+    --input: 41 30% 90%;
+    --ring: 36 33% 15%;
+
+    --radius: 0.75rem; /* Coins plus arrondis pour élégance */
+
+    /* Literary specific tokens */
+    --parchment: 45 35% 95%; /* Fond parchemin */
+    --ink: 36 33% 15%; /* Encre principale */
+    --sepia-light: 41 47% 85%; /* Sépia clair */
+    --sepia-medium: 41 47% 70%; /* Sépia moyen */
+    --sepia-dark: 36 40% 35%; /* Sépia foncé */
+    --antique-gold: 45 65% 75%; /* Or antique subtil */
+
+    /* Gradients for elegant effects */
+    --gradient-parchment: linear-gradient(135deg, hsl(45 35% 95%), hsl(41 47% 92%));
+    --gradient-sepia: linear-gradient(180deg, hsl(41 47% 85%), hsl(36 40% 75%));
+    --gradient-hero: linear-gradient(135deg, hsl(45 29% 97%) 0%, hsl(41 47% 92%) 50%, hsl(36 40% 85%) 100%);
+
+    /* Shadows with sepia tones */
+    --shadow-subtle: 0 2px 8px hsl(36 33% 15% / 0.05);
+    --shadow-medium: 0 4px 16px hsl(36 33% 15% / 0.08);
+    --shadow-strong: 0 8px 32px hsl(36 33% 15% / 0.12);
+    
+    /* Transitions */
+    --transition-elegant: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-subtle: all 0.3s ease-in-out;
+
+    /* Sidebar (si nécessaire) */
+    --sidebar-background: 41 47% 92%;
+    --sidebar-foreground: 36 33% 15%;
+    --sidebar-primary: 36 33% 15%;
+    --sidebar-primary-foreground: 45 29% 97%;
+    --sidebar-accent: 41 47% 85%;
+    --sidebar-accent-foreground: 36 33% 15%;
+    --sidebar-border: 41 30% 85%;
+    --sidebar-ring: 36 33% 15%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
