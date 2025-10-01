@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import insta from "@/assets/insta.png";
+import pinterest from "@/assets/pinterest.png";
 
 export const Footer = () => {
   return (
@@ -55,7 +57,7 @@ export const Footer = () => {
                   className="hover:opacity-75 transition-opacity flex items-center lg:justify-start justify-center gap-2"
                 >
                   <img
-                    src="/src/assets/insta.png"
+                    src={insta}
                     alt="Instagram"
                     className="w-5 h-5"
                   />
@@ -70,7 +72,7 @@ export const Footer = () => {
                   className="hover:opacity-75 transition-opacity flex items-center lg:justify-start justify-center gap-2"
                 >
                   <img
-                    src="/src/assets/pinterest.png"
+                    src={pinterest}
                     alt="Pinterest"
                     className="w-8 h-8"
                   />
