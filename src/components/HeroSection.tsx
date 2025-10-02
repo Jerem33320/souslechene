@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import bookCover from "@/assets/frontcover.png";
+import bookCover from "@/assets/bookcover.png";
 
 export const HeroSection = () => {
   return (
