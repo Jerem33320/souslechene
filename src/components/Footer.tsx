@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import insta from "@/assets/insta.png";
-import pinterest from "@/assets/pinterest.png";
+import pinterest from "@/assets/pinte.png";
 
 export const Footer = () => {
   return (
