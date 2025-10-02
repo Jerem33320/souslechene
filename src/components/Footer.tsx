@@ -74,7 +74,7 @@ export const Footer = () => {
                   <img
                     src={pinterest}
                     alt="Pinterest"
-                    className="w-8 h-8"
+                    className="w-5 h-5"
                   />
                   Pinterest (motivation/inspiration)
                 </a>
