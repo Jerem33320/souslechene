@@ -12,3 +12,4 @@ Allow: /
 
 User-agent: *
 Allow: /
+itemap: https://souslechene.vercel.app/sitemap.xml
