@@ -51,7 +51,7 @@ export const Navigation = ({ className }: NavigationProps) => {
           <Button 
             variant="amazon" 
             size="sm"
-            onClick={() => window.open('https://www.amazon.fr/dp/B0FTC9KQV1/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.DODZb9cp5PVwsm1qWFRuinvSGVsvlcfEX-yWbpXhppHJGfXVbMUxcWptqnYD7ZoxkK1ExFr0c2zen6GDoClN02DQHqBH5e_28OGASyPuD1WKMbwdmKeZqr86eDSUXLtuE-zwFLFt28o9ylcQPwO5J6lCQE9aa69iq7uauCAZ6cQrywFmaj7CsJI-_mlp7ZlD.YGsT2GN7GYVK5qjnPLIQmmCDUhWmCeAWCHOitsyFVBM&qid=1759302877&sr=1-1', '_blank')}
+            onClick={() => window.open('https://www.amazon.fr/dp/B0FTC9KQV1', '_blank')}
           >
             Acheter sur Amazon
           </Button>
@@ -62,7 +62,7 @@ export const Navigation = ({ className }: NavigationProps) => {
           <Button 
             variant="amazon" 
             size="sm"
-            onClick={() => window.open('https://www.amazon.fr/dp/B0FTC9KQV1/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.DODZb9cp5PVwsm1qWFRuinvSGVsvlcfEX-yWbpXhppHJGfXVbMUxcWptqnYD7ZoxkK1ExFr0c2zen6GDoClN02DQHqBH5e_28OGASyPuD1WKMbwdmKeZqr86eDSUXLtuE-zwFLFt28o9ylcQPwO5J6lCQE9aa69iq7uauCAZ6cQrywFmaj7CsJI-_mlp7ZlD.YGsT2GN7GYVK5qjnPLIQmmCDUhWmCeAWCHOitsyFVBM&qid=1759302877&sr=1-1', '_blank')}
+            onClick={() => window.open('https://www.amazon.fr/dp/B0FTC9KQV1', '_blank')}
           >
             Amazon
           </Button>

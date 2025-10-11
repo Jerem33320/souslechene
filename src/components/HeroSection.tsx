@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import bookCover from "@/assets/bookcover.png";
+import backCover from "@/assets/backcover.png";
+import BookCoverCarousel from "./BookCoverCarousel";
 
 export const HeroSection = () => {
   return (
@@ -20,7 +22,7 @@ export const HeroSection = () => {
             <Button 
               variant="amazon" 
               size="xl"
-              onClick={() => window.open('https://www.amazon.fr/dp/B0FTC9KQV1/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.DODZb9cp5PVwsm1qWFRuinvSGVsvlcfEX-yWbpXhppHJGfXVbMUxcWptqnYD7ZoxkK1ExFr0c2zen6GDoClN02DQHqBH5e_28OGASyPuD1WKMbwdmKeZqr86eDSUXLtuE-zwFLFt28o9ylcQPwO5J6lCQE9aa69iq7uauCAZ6cQrywFmaj7CsJI-_mlp7ZlD.YGsT2GN7GYVK5qjnPLIQmmCDUhWmCeAWCHOitsyFVBM&qid=1759302877&sr=1-1', '_blank')}
+              onClick={() => window.open('https://www.amazon.fr/dp/B0FTC9KQV1', '_blank')}
               className="animate-slide-in-right"
             >
               Acheter sur Amazon
@@ -36,14 +38,15 @@ export const HeroSection = () => {
         </div>
         
         <div className="flex justify-center animate-fade-in-slow">
-          <div className="relative">
+          {/* <div className="relative">
             <img 
               src={bookCover} 
               alt="Couverture du livre Sous le chêne, la France"
               className="w-80 shadow-strong transform hover:scale-105 transition-transform duration-500"
             />
             <div className="absolute -inset-4 bg-gradient-sepia opacity-20 rounded-lg blur-xl -z-10"></div>
-          </div>
+          </div> */}
+          <BookCoverCarousel frontCover={bookCover} backCover={backCover} />
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { AboutBookDetails } from "./AboutBookDetails";
 
 export const AboutSection = () => {
   return (
@@ -55,6 +56,7 @@ export const AboutSection = () => {
             </p>
           </div>
         </Card>
+        <AboutBookDetails />
       </div>
     </section>
   );
