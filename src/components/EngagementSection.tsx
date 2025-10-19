@@ -59,7 +59,7 @@ export const EngagementSection = () => {
                 </div>
                 <h3 className="font-semibold text-sepia-white mb-1">{review.title}</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Avis laissé en France le {review.date}
+                  Avis laissé sur amazon le {review.date}
                 </p>
                 <p className="font-crimson text-sepia-white text-base leading-relaxed">
                   {review.content}
