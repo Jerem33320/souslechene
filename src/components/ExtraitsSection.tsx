@@ -27,13 +27,13 @@ export const ExtraitsSection = () => {
   ];
 
   return (
-    <section id="extraits" className="py-20 px-4 bg-background">
+    <section id="extraits" className="py-20 px-4 bg-gradient-sepia">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 backdrop-blur-sm border-sepia-light shadow-strong">
           <h2 className="font-playfair text-3xl md:text-4xl font-bold text-primary mb-6">
             Extraits & Illustrations
           </h2>
-          <p className="font-crimson text-lg text-sepia-dark">
+          <p className="font-crimson text-lg text-sepia-white">
             Découvrez quelques passages qui illustrent l'esprit de l'ouvrage
           </p>
         </div>
@@ -56,7 +56,7 @@ export const ExtraitsSection = () => {
                 {extrait.title}
               </h3>
               
-              <p className="mt-4 text-lg md:text-xl font-crimson text-sepia-dark leading-relaxed italic">
+              <p className="mt-4 text-lg md:text-xl font-crimson text-sepia-white leading-relaxed italic">
                 "{extrait.text}"
               </p>
             </Card>
@@ -65,7 +65,7 @@ export const ExtraitsSection = () => {
         
         <div className="text-center mt-12">
           <Button 
-            variant="literary" 
+            variant="amazon" 
             size="lg"
             onClick={() => window.open('https://www.amazon.fr/dp/B0FTC9KQV1', '_blank')}
           >

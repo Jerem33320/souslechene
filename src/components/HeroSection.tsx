@@ -11,10 +11,10 @@ export const HeroSection = () => {
           <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight">
             Sous le chêne,
             <br />
-            <span className="text-sepia-dark">la France</span>
+            <span className="text-sepia-white">la France</span>
           </h1>
           
-          <p className="font-crimson text-lg md:text-xl text-sepia-dark leading-relaxed max-w-xl">
+          <p className="font-crimson text-lg md:text-xl text-sepia-white leading-relaxed max-w-xl">
           Un voyage à travers l’histoire et la culture de ce pays, guidé par la voix d’un humble ermite, ponctué de points mystères qui éclairent des dimensions méconnues et de points personnages qui incarnent les grandes figures de la France.
           </p>
           

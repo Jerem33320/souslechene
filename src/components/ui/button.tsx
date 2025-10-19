@@ -19,9 +19,10 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         // Literary theme variants
-        literary: "bg-sepia-dark text-parchment hover:bg-sepia-medium shadow-subtle hover:shadow-medium font-serif font-medium",
-        "literary-outline": "border-2 border-sepia-dark text-sepia-dark bg-transparent hover:bg-sepia-dark hover:text-parchment font-serif font-medium",
-        amazon: "bg-gradient-to-r from-amber-600 to-orange-600 text-white hover:from-amber-700 hover:to-orange-700 shadow-medium hover:shadow-strong font-semibold",
+        literary: "bg-sepia-white text-parchment hover:bg-sepia-medium shadow-subtle hover:shadow-medium font-serif font-medium",
+        "literary-outline": "border-2 border-sepia-white text-sepia-white bg-transparent hover:bg-sepia-white hover:text-primary font-serif font-medium",
+        // amazon: "bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] hover:bg-[hsl(150_60%_52%)] shadow-medium hover:shadow-strong font-semibold"
+        amazon: "bg-gradient-to-r from-[hsl(150_60%_45%)] to-[hsl(152_55%_50%)] text-white hover:from-[hsl(150_60%_52%)] hover:to-[hsl(152_60%_56%)] shadow-medium hover:shadow-strong font-semibold"
       },
       size: {
         default: "h-10 px-4 py-2",

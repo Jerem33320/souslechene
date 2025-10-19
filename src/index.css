@@ -2,127 +2,136 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Design system for "Sous le chêne, la France" - Academic Literary Theme
-   Palette: sépia, beige, noir et blanc (manuscrits anciens)
-   All colors MUST be HSL.
+/* Design system "Black & Metal Green"
+   Palette: noir profond + vert métal (accents, glow)
+   Toutes les couleurs en HSL.
 */
 
 @layer base {
   :root {
-    /* Core Literary Theme Colors */
-    --background: 45 29% 97%; /* Beige très clair - parchemin */
-    --foreground: 36 33% 15%; /* Brun foncé - encre ancienne */
+    /* Core Dark Theme */
+    --background: 150 8% 3%;    /* Noir avec très légère teinte verte */
+    --foreground: 150 15% 92%;  /* Presque blanc, légèrement froid/vert */
 
-    --card: 41 47% 92%; /* Sépia clair */
-    --card-foreground: 36 33% 15%;
+    --card: 150 8% 6%;          /* Panneau sombre */
+    --card-foreground: 150 15% 92%;
 
-    --popover: 45 29% 97%;
-    --popover-foreground: 36 33% 15%;
+    --popover: 150 8% 5%;
+    --popover-foreground: 150 15% 92%;
 
-    /* Primary - Brun académique noble */
-    --primary: 36 33% 15%; /* Brun foncé élégant */
-    --primary-foreground: 45 29% 97%;
-    --primary-hover: 36 33% 25%; /* Plus clair au survol */
+    /* Primary — "metal green" */
+    --primary: 150 60% 45%;           /* Vert métal (émeraude/néon mesuré) */
+    --primary-foreground: 150 10% 3%; /* Texte sur bouton vert: quasi noir */
+    --primary-hover: 150 60% 52%;     /* Légèrement plus lumineux au survol */
 
-    /* Secondary - Sépia doux */
-    --secondary: 41 47% 85%; /* Sépia moyen */
-    --secondary-foreground: 36 33% 15%;
+    /* Secondary — gris acier verdâtre */
+    --secondary: 160 8% 14%;
+    --secondary-foreground: 150 12% 88%;
 
-    /* Muted - Tons neutres */
-    --muted: 41 30% 90%; /* Beige sépia très clair */
-    --muted-foreground: 45 4% 40%; /* Gris sépia */
+    /* Muted — surfaces discrètes */
+    --muted: 160 6% 12%;
+    --muted-foreground: 150 8% 62%;
 
-    /* Accent - Or antique subtil */
-    --accent: 41 47% 75%; /* Sépia plus prononcé */
-    --accent-foreground: 36 33% 15%;
+    /* Accent — éclat vert métal */
+    --accent: 152 55% 50%;
+    --accent-foreground: 150 10% 3%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Destructive (rouge cohérent sur fond sombre) */
+    --destructive: 0 72% 48%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 41 30% 85%; /* Bordures sépia délicates */
-    --input: 41 30% 90%;
-    --ring: 36 33% 15%;
+    /* Strokes, inputs, focus */
+    --border: 160 8% 18%;
+    --input: 160 8% 14%;
+    --ring: 150 60% 45%; /* Halo vert métal */
 
-    --radius: 0.75rem; /* Coins plus arrondis pour élégance */
+    --radius: 0.75rem;
 
-    /* Literary specific tokens */
-    --parchment: 45 35% 95%; /* Fond parchemin */
-    --ink: 36 33% 15%; /* Encre principale */
-    --sepia-light: 41 47% 85%; /* Sépia clair */
-    --sepia-medium: 41 47% 70%; /* Sépia moyen */
-    --sepia-dark: 36 40% 35%; /* Sépia foncé */
-    --antique-gold: 45 65% 75%; /* Or antique subtil */
+    /* Tokens spécifiques (adaptés au thème) */
+    --parchment: 150 8% 6%;      /* Ancien "parchment" -> panneau sombre */
+    --ink: 150 15% 92%;          /* Texte principal clair */
+    --sepia-light: 160 8% 18%;   /* Remplacé par un gris-vert clair */
+    --sepia-medium: 160 8% 24%;
+    --sepia-dark: 160 8% 12%;
+    --antique-gold: 55 80% 55%;  /* Option: micro-accents dorés si besoin */
 
-    /* Gradients for elegant effects */
-    --gradient-parchment: linear-gradient(135deg, hsl(45 35% 95%), hsl(41 47% 92%));
-    --gradient-sepia: linear-gradient(180deg, hsl(41 47% 85%), hsl(36 40% 75%));
-    --gradient-hero: linear-gradient(135deg, hsl(45 29% 97%) 0%, hsl(41 47% 92%) 50%, hsl(36 40% 85%) 100%);
+    /* Gradients (effet métal/néon) */
+    --gradient-parchment: linear-gradient(
+      135deg,
+      hsl(150 8% 6%) 0%,
+      hsl(160 8% 12%) 50%,
+      hsl(150 8% 6%) 100%
+    );
+    --gradient-sepia: linear-gradient(
+      180deg,
+      hsl(150 60% 45% / 0.12),
+      hsl(150 60% 45% / 0.06)
+    );
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(150 8% 3%) 0%,
+      hsl(150 8% 6%) 40%,
+      hsl(150 60% 45% / 0.10) 100%
+    );
 
-    /* Shadows with sepia tones */
-    --shadow-subtle: 0 2px 8px hsl(36 33% 15% / 0.05);
-    --shadow-medium: 0 4px 16px hsl(36 33% 15% / 0.08);
-    --shadow-strong: 0 8px 32px hsl(36 33% 15% / 0.12);
-    
-    /* Transitions */
-    --transition-elegant: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-subtle: all 0.3s ease-in-out;
+    /* Ombres avec glow vert subtil */
+    --shadow-subtle: 0 2px 8px hsl(150 60% 45% / 0.10), 0 1px 0 hsl(0 0% 0% / 0.4);
+    --shadow-medium: 0 6px 20px hsl(150 60% 45% / 0.14), 0 2px 0 hsl(0 0% 0% / 0.5);
+    --shadow-strong: 0 12px 40px hsl(150 60% 45% / 0.18), 0 4px 0 hsl(0 0% 0% / 0.55);
 
-    /* Sidebar (si nécessaire) */
-    --sidebar-background: 41 47% 92%;
-    --sidebar-foreground: 36 33% 15%;
-    --sidebar-primary: 36 33% 15%;
-    --sidebar-primary-foreground: 45 29% 97%;
-    --sidebar-accent: 41 47% 85%;
-    --sidebar-accent-foreground: 36 33% 15%;
-    --sidebar-border: 41 30% 85%;
-    --sidebar-ring: 36 33% 15%;
+    /* Sidebar */
+    --sidebar-background: 150 8% 4%;
+    --sidebar-foreground: 150 15% 92%;
+    --sidebar-primary: 150 60% 45%;
+    --sidebar-primary-foreground: 150 10% 3%;
+    --sidebar-accent: 152 55% 50%;
+    --sidebar-accent-foreground: 150 10% 3%;
+    --sidebar-border: 160 8% 18%;
+    --sidebar-ring: 150 60% 45%;
   }
 
+  /* Le thème est déjà dark; on garde .dark identique pour simplicité.
+     Si tu veux un mode "ultra dark", voici une légère variation. */
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 150 10% 2.5%;
+    --foreground: 150 18% 94%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 150 8% 5%;
+    --card-foreground: 150 18% 94%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 150 8% 4%;
+    --popover-foreground: 150 18% 94%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 150 62% 48%;
+    --primary-foreground: 150 10% 3%;
+    --secondary: 160 9% 12%;
+    --secondary-foreground: 150 16% 90%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --muted: 160 7% 10%;
+    --muted-foreground: 150 10% 64%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 152 58% 52%;
+    --accent-foreground: 150 10% 3%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --destructive: 0 74% 46%;
+    --destructive-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --border: 160 8% 16%;
+    --input: 160 8% 12%;
+    --ring: 150 62% 48%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 150 10% 2.5%;
+    --sidebar-foreground: 150 18% 94%;
+    --sidebar-primary: 150 62% 48%;
+    --sidebar-primary-foreground: 150 10% 3%;
+    --sidebar-accent: 152 58% 52%;
+    --sidebar-accent-foreground: 150 10% 3%;
+    --sidebar-border: 160 8% 16%;
+    --sidebar-ring: 150 62% 48%;
   }
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-  }
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground; }
 }

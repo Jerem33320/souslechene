@@ -26,27 +26,33 @@ export const Navigation = ({ className }: NavigationProps) => {
         <div className="hidden md:flex items-center space-x-6">
         <button 
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="text-sepia-dark hover:text-primary transition-colors font-crimson"
+              className="text-sepia-white hover:text-primary transition-colors font-crimson"
             >
               ⬆
             </button>
           <button 
             onClick={() => scrollToSection('about')}
-            className="text-sepia-dark hover:text-primary transition-colors font-crimson"
+            className="text-sepia-white hover:text-primary transition-colors font-crimson"
           >
             À propos
           </button>
           <button 
             onClick={() => scrollToSection('extraits')}
-            className="text-sepia-dark hover:text-primary transition-colors font-crimson"
+            className="text-sepia-white hover:text-primary transition-colors font-crimson"
           >
             Extraits
           </button>
           <button 
             onClick={() => scrollToSection('auteur')}
-            className="text-sepia-dark hover:text-primary transition-colors font-crimson"
+            className="text-sepia-white hover:text-primary transition-colors font-crimson"
           >
             Auteur
+          </button>
+          <button 
+            onClick={() => scrollToSection('avis')}
+            className="text-sepia-white hover:text-primary transition-colors font-crimson"
+          >
+            Avis
           </button>
           <Button 
             variant="amazon" 

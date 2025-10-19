@@ -33,7 +33,7 @@ export const AboutBookDetails = () => {
         >
           <div className="mb-3">{item.icon}</div>
           <p className="text-sm text-muted-foreground">{item.label}</p>
-          <p className="text-lg font-semibold text-sepia-dark mt-1">{item.value}</p>
+          <p className="text-lg font-semibold text-sepia-white mt-1">{item.value}</p>
         </div>
       ))}
     </div>

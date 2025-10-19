@@ -4,7 +4,7 @@ import pinterest from "@/assets/pinte.png";
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground py-12 px-4">
+    <footer className="bg-parchment text-white-foreground py-12 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-4 gap-8 text-center md:text-left">
           <div>
@@ -94,7 +94,7 @@ export const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
+        <div className="border-t border-white-foreground/20 mt-8 pt-8 text-center">
           <p className="font-crimson text-sm opacity-75">
             © 2025 Sous le chêne, la France. Tous droits réservés.
           </p>
